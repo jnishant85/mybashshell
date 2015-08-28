@@ -1,0 +1,12 @@
+alias cls='clear'
+
+cd.() { cd ..$1; }
+cd..() { cd ../..$1; }
+cd...() { cd ../../..$1; }
+cd....() { cd ../../../..$1; }
+cd.....() { cd ../../../../..$1; }
+
+cbk() { cp -rf $1 $1.bkup; }
+mbk() { mv -f $1 $1.bkup; }
+rbk() { rm -rfv *.bkup; }
+
